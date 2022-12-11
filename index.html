@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="script.js" async></script>
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+
+    <div class="mainWrapper">
+      <h1>Learn to code by watching others</h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+
+    <div class="desktopRight">
+      <div class="banner"><span id="trialCTA">Try it free 7 days</span> then $20/mo. thereafter</div>
+      <article class="entryCard">
+        <form class='form'>
+          <div class="formControl">
+            <input type="text" class="inputBox" id="firstName" pattern="[A-Za-z]{1,255}" placeholder="First Name">
+            <small></small>
+          </div>
+          <div class="formControl">
+            <input type="text" class="inputBox" id="lastName" pattern="[A-Za-z]{1,255}" placeholder="Last Name">
+            <small></small>
+          </div>
+          <div class="formControl">
+            <input type="email" class="inputBox" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email Address">
+            <small></small>
+          </div>
+          <div class="formControl">
+            <input type="password" class="inputBox" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password">
+            <small></small>
+          </div>
+          <button class="claim" type="submit">CLAIM YOUR FREE TRIAL</button>
+        </form>
+        <article class="disclaimer">
+          <p>By clicking the button, you are agreeing to our <a href="#" id="terms">Terms and Services</a></p>
+        </article>
+      </article>
+    </div>
+
+  </main>
+  
+
+</body>
+</html>
